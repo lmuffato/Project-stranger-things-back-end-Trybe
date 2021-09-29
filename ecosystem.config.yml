@@ -1,5 +1,5 @@
 apps:
-  - name: stranger
+  - name: stranger-things-backend
     script: ./index.js
     watch: false
     exec_mode: cluster
