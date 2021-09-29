@@ -1,5 +1,4 @@
-apps: 
-
+apps:
 - script: ./index.js
   name: stranger backend
   instances: 2
