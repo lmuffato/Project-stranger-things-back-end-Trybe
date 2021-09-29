@@ -33,3 +33,6 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log('Escutando na porta 3000');
 });
+
+// Criando o segundo Heroku: heroku create gbl97-bd --remote heroku-bd
+// Dando o push: git push heroku  gbl97-sd-010-a-stranger-things-backend:master
