@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
@@ -27,6 +28,8 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(3000, () => {
+const { PORT = 3000 } = process.env;
+
+app.listen(PORT, () => {
   console.log('Escutando na porta 3000');
 });
