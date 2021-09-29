@@ -1,6 +1,6 @@
 'use strict';
 
-const flipout = require('flipout'); // well
+const flipout = require('flipout'); // wel
 
 class StrangerThingsService {
   constructor(repository) {
