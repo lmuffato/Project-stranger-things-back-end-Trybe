@@ -23,3 +23,5 @@ class StrangerThingsService {
 }
 
 module.exports = StrangerThingsService;
+
+// commit inicial
