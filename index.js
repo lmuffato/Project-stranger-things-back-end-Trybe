@@ -20,9 +20,12 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = UPSIDEDOWN_MODE;
+let hereIsTheUpsideDown = UPSIDEDOWN_MODE;
 
 app.get('/', (req, res) => {
+  const isHawkinsApp = req.subdomains.some((sd) => sd.includes('bk'));
+  if (isHawkinsApp) hereIsTheUpsideDown = false;
+  
   const characters = strangerThingsService.search(
     req.query,
     hereIsTheUpsideDown,
@@ -34,3 +37,6 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
 });
+
+// Source Ref
+// req.subdomains --> http://expressjs.com/en/api.html#req.subdomains
