@@ -32,5 +32,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Escutando na porta ${PORT}, UPSIDEDOWN_MODE ${UPSIDEDOWN_MODE}`);
+  console.log(`Escutando na porta ${PORT}`);
 });
