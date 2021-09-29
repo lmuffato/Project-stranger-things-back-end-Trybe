@@ -1,0 +1,6 @@
+apps:
+  - name: vinicius_franca_back
+    script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    max_memory_restart: 200M
