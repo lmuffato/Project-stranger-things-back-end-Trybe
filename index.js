@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express'); // BackEnd
 const cors = require('cors');
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
