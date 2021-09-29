@@ -28,8 +28,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-const { PORT = 3000 } = process.env;
-
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Escutando na porta 3000');
 });
