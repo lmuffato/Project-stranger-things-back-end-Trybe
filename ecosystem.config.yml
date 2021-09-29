@@ -1,5 +1,5 @@
 apps:
-- name: rafaelgeronimo-stranger-things-backend
+- name: hawkins
   script: ./index.js
   exec_mode: cluster
   instances: 2
