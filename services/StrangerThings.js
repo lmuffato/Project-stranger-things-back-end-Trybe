@@ -20,6 +20,6 @@ class StrangerThingsService {
 
     return characters;
   }
-}
+};
 
 module.exports = StrangerThingsService;
