@@ -1,0 +1,9 @@
+// Referência: https://github.com/Unitech/pm2/blob/master/examples/ecosystem-file/process.yml
+
+apps:
+
+- name: projeto-backend
+  script: ./index.js
+  exec_mode: cluster
+  instances: 2
+  max_memory_restart: 200M
