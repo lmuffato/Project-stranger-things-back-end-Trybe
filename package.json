@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start ecosystem.config.yml",
-    "start:dev": "pm2 start index.js --name HTTP-API-STRANGER-THINGS --watch",
-    "stop": "pm2 delete ecosystem.config.yml || pm2 delete index.js --name HTTP-API-STRANGER-THINGS --watch",
+    "start:dev": "pm2 start index.js --name upside-down --watch",
+    "stop": "pm2 delete ecosystem.config.yml || pm2 delete index.js --name upside-down --watch",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json ."
   },
