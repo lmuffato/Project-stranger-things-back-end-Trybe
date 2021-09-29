@@ -1,0 +1,17 @@
+apps:
+
+  - name: hawkins
+    script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    max_memory_restart: 200M
+    env_hawkins:
+      UPSIDEDOWN_MODE=false
+
+  - name: upside-down
+    script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    max_memory_restart: 200M
+    env_upside-down:
+      UPSIDEDOWN_MODE=false
