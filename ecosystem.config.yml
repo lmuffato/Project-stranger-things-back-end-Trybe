@@ -1,9 +1,9 @@
 apps:
 - name: stranger-backend
   script: ./index.js
-  watch: false
   exec_mode: cluster
   instances: 2
+  watch: false
   max_memory_restart: 200M
 
 
