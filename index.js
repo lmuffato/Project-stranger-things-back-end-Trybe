@@ -21,6 +21,8 @@ app.use(cors());
 
 const { UPSIDEDOWN_MODE } = process.env;
 
+console.log(UPSIDEDOWN_MODE);
+
 let hereIsTheUpsideDown = false;
 
 if (UPSIDEDOWN_MODE === 'true') {
