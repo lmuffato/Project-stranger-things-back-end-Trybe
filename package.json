@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2-runtime start ecosystem.config.yml",
-    "start:dev": "pm2-runtime start index.js --name upside-down --watch",
-    "stop": "pm2-runtime delete ecosystem.config.yml || pm2-runtime delete index.js --name upside-down --watch",
+    "start": "pm2 start ecosystem.config.yml",
+    "start:dev": "pm2 start index.js --name upside-down --watch",
+    "stop": "pm2 delete ecosystem.config.yml || pm2 delete index.js --name upside-down --watch",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json ."
   },
