@@ -4,4 +4,4 @@ apps:
   exec_mode: cluster
   instances: 2
   max_memory_restart: 200M
-  # exp_backoff_restart_delay: 100
+  exp_backoff_restart_delay: 100
