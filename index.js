@@ -20,12 +20,9 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-let hereIsTheUpsideDown = UPSIDEDOWN_MODE;
+const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true';
 
 app.get('/', (req, res) => {
-  const isHawkinsApp = req.subdomains.some((sd) => sd.includes('bk'));
-  if (isHawkinsApp) hereIsTheUpsideDown = false;
-  
   const characters = strangerThingsService.search(
     req.query,
     hereIsTheUpsideDown,
