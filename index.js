@@ -2,9 +2,9 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
-const { UPSIDEDOWN_MODE } = process.env;
+const { UPSIDEDOWN_MODE, PORT } = process.env;
 
-const PORT = process.env.PORT || 3000;
+const porte = PORT || 3000;
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
@@ -32,6 +32,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(PORT, () => {
-  console.log(`Escutando na porta ${PORT}`);
+app.listen(porte, () => {
+  console.log(`Escutando na porta ${porte}`);
 });
