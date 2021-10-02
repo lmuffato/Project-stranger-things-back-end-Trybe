@@ -8,6 +8,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 const app = express();
 
 const port = process.env.PORT || 3000;
+const serv_env = process.env.SERV_ENV || 'não foi :/';
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
@@ -29,6 +30,10 @@ app.get('/', (req, res) => {
   );
 
   res.status(200).json(characters);
+});
+
+app.get('/ola', (req, res) => {
+  res.send(`voce está no ambiente de ${serv_env}`);
 });
 
 app.listen(port, () => {
