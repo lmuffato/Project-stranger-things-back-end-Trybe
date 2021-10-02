@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/ola', (req, res) => {
-  res.send(`voce está no ambiente de ${serv_env}`);
+  res.send(`voce está no ambiente de ${serv_env} seu dono é ${process.env.GITHUB_USER}`);
 });
 
 app.listen(port, () => {
