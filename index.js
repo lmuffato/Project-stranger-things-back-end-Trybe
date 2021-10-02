@@ -20,6 +20,8 @@ app.use(cors());
 
 const hereIsTheUpsideDown = true;
 
+// oi
+
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
