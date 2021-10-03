@@ -18,7 +18,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
+const hereIsTheUpsideDown = false;
 
 // oioi
 
