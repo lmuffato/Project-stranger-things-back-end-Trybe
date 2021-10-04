@@ -1,5 +1,6 @@
 const express = require('express'); // BackEnd
 const cors = require('cors');
+require('dotenv').config();
 
 // const { PORT, UPSIDEDOWN_MODE } = process.env;
 
