@@ -19,7 +19,7 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 const hereIsTheUpsideDown = true;
-
+//alteração
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
