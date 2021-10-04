@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
     hereIsTheUpsideDown,
   );
   console.log('modo upsidedown está ligado?', hereIsTheUpsideDown);
+  console.log('tipo da variável', typeof hereIsTheUpsideDown);
 
   res.status(200).json(characters);
 });
