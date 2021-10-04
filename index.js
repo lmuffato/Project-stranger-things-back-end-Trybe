@@ -29,5 +29,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`O pai ta on na ${PORT}`);
+  console.log(`Escutando na porta ${PORT}`);
 });
