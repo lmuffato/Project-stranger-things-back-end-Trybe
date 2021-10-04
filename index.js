@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
     req.query,
     hereIsTheUpsideDown,
   );
+  console.log('modo upsidedown está ligado?', hereIsTheUpsideDown);
 
   res.status(200).json(characters);
 });
