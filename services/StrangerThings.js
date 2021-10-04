@@ -21,5 +21,5 @@ class StrangerThingsService {
     return characters;
   }
 }
-
+// Initial commit
 module.exports = StrangerThingsService;
