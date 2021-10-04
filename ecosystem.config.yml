@@ -1,11 +1,5 @@
 apps:
-  - name: fomes-bd
-    script: ./index.js
-    exec_mode: cluster
-    instances: 2
-    watch: false
-    max_memory_restart: 200M
-  - name: fomes-bk
+  - name: fomes-back
     script: ./index.js
     exec_mode: cluster
     instances: 2
