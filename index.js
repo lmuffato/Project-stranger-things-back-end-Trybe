@@ -7,7 +7,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 require('dotenv').config(); // Configura o uso de variáveis de ambiente
 
-const { PORT, UPSIDEDOWN_MODE } = process.env;
+const { PORT, UPSIDEDOWN_MODE } = process.env; // Desconstroi as variáveis de ambiente
 
 const app = express();
 
