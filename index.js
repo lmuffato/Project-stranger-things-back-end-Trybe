@@ -20,7 +20,7 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
-// Passando de string para boolean
+// Passando de string para boolean, link abaixo
 // https://stackoverflow.com/questions/263965/how-can-i-convert-a-string-to-boolean-in-javascript
 
 app.get('/', (req, res) => {
