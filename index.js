@@ -22,6 +22,11 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 
+// const boolValue = (/true/i).test(hereIsTheUpsideDown);
+
+// console.log('valorTrue', boolValue);
+// console.log('valorTrueTypeof', typeof boolValue);
+
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
