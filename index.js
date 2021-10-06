@@ -6,7 +6,7 @@ const strangerThingsDataset = require('./data/dataset/stranger-things-characters
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
 
-const hereIsTheUpsideDown = JSON.parse(process.env.UPSIDEDOWN_MODE);
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
 const app = express();
 
 const strangerThingsRepository = new StrangerThingsRepository(

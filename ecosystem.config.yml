@@ -1,5 +1,5 @@
 apps:
-- name: walvesb65-stanger-things-backend
+- name: walvesb65-ft
   script: ./index.js
   exec_mode: cluster
   instances: 2
