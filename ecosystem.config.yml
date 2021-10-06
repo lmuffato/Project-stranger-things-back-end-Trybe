@@ -1,0 +1,6 @@
+apps:
+
+  - name: stranger-things-back-end
+    script: ./index.js
+    exec_mode: cluster
+    instances: max
