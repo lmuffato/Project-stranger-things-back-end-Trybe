@@ -1,5 +1,5 @@
 apps:
-- name: walvesb65-ft
+- name: walvesb65-bd
   script: ./index.js
   exec_mode: cluster
   instances: 2
