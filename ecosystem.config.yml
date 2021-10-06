@@ -1,0 +1,3 @@
+apps:
+  - name: stranger-back-upside
+    script: ./index.js
