@@ -1,3 +1,7 @@
 apps:
-  - name: stranger-back-upside
-    script: ./index.js
+
+- name: stranger-back-upside
+  script: ./index.js
+  exec_mode: cluster
+  instances: 2
+  max_memory_restart: 200M
