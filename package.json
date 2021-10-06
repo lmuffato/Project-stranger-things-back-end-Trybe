@@ -7,7 +7,7 @@
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json .",
     "start": "pm2 start ecosystem.config.yml",
-    "start:dev": "pm2 start index.js --name felipefloresweb-stranger-things-backend-dev --watch"
+    "start:dev": "pm2 start index.js --name walvesb65-stranger-things-backend-dev --watch"
   },
   "keywords": [],
   "author": "",
