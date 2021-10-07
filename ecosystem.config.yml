@@ -3,4 +3,6 @@ apps:
   - name: stranger-things-back-end
     script: ./index.js
     exec_mode: cluster
-    instances: max
+    instances: 2
+    watch: false
+    max_memory_restart: 200M
