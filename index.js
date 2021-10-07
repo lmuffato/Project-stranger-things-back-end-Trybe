@@ -35,6 +35,10 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
+app.get('/ping', (_req, res) => {
+  res.status(200).json({ message: 'ping' });
+});
+
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
 });
