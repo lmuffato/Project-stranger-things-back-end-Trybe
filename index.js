@@ -13,7 +13,7 @@ let hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 
 if (hereIsTheUpsideDown === 'true') {
   hereIsTheUpsideDown = false;
-} else { // forçado
+} else {
   hereIsTheUpsideDown = false;
 }
 
