@@ -12,7 +12,7 @@ const PORT = parseInt(process.env.PORT, 10) || 3000;
 let hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 
 if (hereIsTheUpsideDown === 'true') {
-  hereIsTheUpsideDown = true;
+  hereIsTheUpsideDown = false;
 } else {
   hereIsTheUpsideDown = false;
 }
