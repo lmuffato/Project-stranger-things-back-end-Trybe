@@ -19,6 +19,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
+// variaveis de ambiente
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 const port = process.env.PORT;
 
