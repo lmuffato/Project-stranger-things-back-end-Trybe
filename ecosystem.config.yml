@@ -1,6 +1,6 @@
 apps:
 
-  - name: stranger-things-back-end
+  - name: WillianMendes-bk
     script: ./index.js
     exec_mode: cluster
     instances: 2
