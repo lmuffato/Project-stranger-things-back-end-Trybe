@@ -8,7 +8,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.POR, 10) || 3000;
 let hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 
 if (hereIsTheUpsideDown === 'true') {
