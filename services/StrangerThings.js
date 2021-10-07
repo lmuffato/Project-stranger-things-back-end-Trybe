@@ -11,6 +11,7 @@ class StrangerThingsService {
     const characters = this.repository.search(params, { page, size });
 
     if (upsideDownMode) {
+      console.log('DESGRAÇA');
       return characters.map(({ name, origin, status }) => ({
         name: flipout(name),
         origin: flipout(origin),
