@@ -29,6 +29,9 @@ heroku config:set PM2_PUBLIC_KEY="<valor>" --app <nomeDaAplicacao>
 heroku config:set PM2_PUBLIC_KEY="e484lrtrttvaa93" --app glacial-journey-95936;
 heroku config:set PM2_SECRET_KEY="i8hgyts4u9c5qyi" --app glacial-journey-95936;
 
+heroku config:set UPSIDEDOWN_MODE="false" --app lmuffato-bk;
+heroku config:set UPSIDEDOWN_MODE="true" --app lmuffato-bd;
+
 3. 5. Verificando as variáveis de ambiente da aplicação
 heroku config --app <nomeDaAplicacao>
 
@@ -51,7 +54,9 @@ heroku create lmuffato-bd --remote heroku-upside-down
 4. 1. Fazendo push por ambiente
 git push heroku-<nomeDoRemote> <nomeDaBranchDoGitHub>-things-backend:master
 
-git push heroku-upside-down lmuffato-sd-010-a-stranger-things-backend:master
+
+git push hawkins lmuffato-sd-010-a-stranger-things-backend:master
+git push upside-down lmuffato-sd-010-a-stranger-things-backend:master
 
 5. Renoemando o remote
 git remote rename heroku <nomeDoRemote>
