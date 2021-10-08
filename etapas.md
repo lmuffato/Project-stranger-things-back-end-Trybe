@@ -29,8 +29,6 @@ heroku config:set PM2_PUBLIC_KEY="<valor>" --app <nomeDaAplicacao>
 heroku config:set PM2_PUBLIC_KEY="e484lrtrttvaa93" --app glacial-journey-95936;
 heroku config:set PM2_SECRET_KEY="i8hgyts4u9c5qyi" --app glacial-journey-95936;
 
-heroku config:set UPSIDEDOWN_MODE="false" --app glacial-gorge-44888;
-
 3. 5. Verificando as variáveis de ambiente da aplicação
 heroku config --app <nomeDaAplicacao>
 
@@ -43,3 +41,22 @@ Adicione o arquivo ecosystem.config.yml. O arquivo deverá realizar as seguintes
 4. Reiniciar o processo caso ele consuma mais de 200MB de memória.
 
 importante: O arquivo ecosystem deve ter a extensão yml e não yaml.
+
+4. Criando ambientes diferentes (remote) a partir de uma aplicação existente
+heroku create <nomeDaAplicacao> --remote heroku-<nomeDoRemote>
+
+Ambiente upside-down
+heroku create lmuffato-bd --remote heroku-upside-down
+
+4. 1. Fazendo push por ambiente
+git push heroku-<nomeDoRemote> <nomeDaBranchDoGitHub>-things-backend:master
+
+git push heroku-upside-down lmuffato-sd-010-a-stranger-things-backend:master
+
+5. Renoemando o remote
+git remote rename heroku <nomeDoRemote>
+
+git remote rename heroku heroku-origin
+
+git remote rename heroku hawkins
+
