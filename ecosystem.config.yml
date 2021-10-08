@@ -1,0 +1,11 @@
+apps:
+  - name: app
+  script: ./index.js
+  exec_mode: cluster
+  instances: 2
+  env_produ:
+    ENVIRONMENT: PRODUCTION
+  env_homolog:
+    ENVIRONMENT: HOMOLOG
+  watch: false
+  max_memory_restart: 200M
