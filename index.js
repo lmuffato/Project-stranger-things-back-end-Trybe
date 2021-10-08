@@ -1,11 +1,10 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config(); // Configura o uso de variáveis de ambiente
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
-
-require('dotenv').config(); // Configura o uso de variáveis de ambiente
 
 const { PORT, UPSIDEDOWN_MODE } = process.env; // Desconstroi as variáveis de ambiente
 
@@ -18,6 +17,8 @@ const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
 );
 
+const upsideDownSwap = JSON.parse(UPSIDEDOWN_MODE);
+
 app.use(cors());
 
 // const hereIsTheUpsideDown = true; // A constante hereIsTheUpsideDown passará a ser usada pela variável de ambiente
@@ -25,9 +26,8 @@ app.use(cors());
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
-    UPSIDEDOWN_MODE,
+    upsideDownSwap,
   );
-
   res.status(200).json(characters);
 });
 
