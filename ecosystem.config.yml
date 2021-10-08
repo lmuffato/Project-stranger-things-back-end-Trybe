@@ -1,0 +1,7 @@
+apps:
+  - name: SD-010-A-STRANGER-THINGS-BACKEND
+    script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    watch: false
+    max_memory_restart: 200M
