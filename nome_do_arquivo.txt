@@ -1,0 +1,16 @@
+ 1444  yarn watch
+ 1445  yarn watch
+ 1446  yarn && yarn watch
+ 1447  yarn watch
+ 1448  yarn watch
+ 1449  yarn watch
+ 1450  yarn watch
+ 1451  yarn watch
+ 1452  yarn watch
+ 1453  heroku create anaventura1811-bd --remote heroku-upsideDown
+ 1454  git push heroku-upsideDown master
+ 1455  heroku git:remote -a anaventura1811-bd
+ 1456  git push heroku-upsideDown master
+ 1457  git remote -v
+ 1458  git push heroku-upsideDown master
+ 1459  git push anaventura1811-bd master
