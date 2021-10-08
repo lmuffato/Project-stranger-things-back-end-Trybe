@@ -29,6 +29,8 @@ heroku config:set PM2_PUBLIC_KEY="<valor>" --app <nomeDaAplicacao>
 heroku config:set PM2_PUBLIC_KEY="e484lrtrttvaa93" --app glacial-journey-95936;
 heroku config:set PM2_SECRET_KEY="i8hgyts4u9c5qyi" --app glacial-journey-95936;
 
+heroku config:set UPSIDEDOWN_MODE="false" --app glacial-gorge-44888;
+
 3. 5. Verificando as variáveis de ambiente da aplicação
 heroku config --app <nomeDaAplicacao>
 
