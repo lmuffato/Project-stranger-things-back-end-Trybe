@@ -1,3 +1,5 @@
 apps:
   - name: App
     script: ./index.js
+    instances: 2
+    max_memory_restart: 200M
